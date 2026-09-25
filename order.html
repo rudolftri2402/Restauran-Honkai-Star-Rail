@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Order - The Chrysos Maze Grand Restaurant
+    </title>
+    <link rel="stylesheet"
+          href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="Images/background.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+<nav class="navbar">
+    <!-- Tombol Musik -->
+    <button id="musicButton" class="music-button">
+        🔇
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<audio id="backgroundMusic" loop>
+    <source src="music/Malam.mpeg" type="audio/mpeg">
+</audio>
+
+    <!-- =================================================
+         SOCIAL MEDIA
+    ================================================== -->
+    <div class="social-sidebar">
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-tiktok"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-discord"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- =================================================
+         ORDER PAGE
+    ================================================== -->
+    <main class="order-page">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+        <section class="order-header">
+            <span class="gold-line"></span>
+            <p class="small-title">
+                THE CHRYSOS MAZE</p>
+            <h1>
+                Place Your Order
+            </h1>
+            <p>
+                Pilih hidangan favorit Anda dan nikmati
+                pengalaman bersantap di The Chrysos Maze.
+            </p>
+            <span class="gold-line"></span>
+        </section>
+
+        <!-- =================================================
+             ORDER TYPE
+        ================================================== -->
+        <section class="order-type-section">
+            <span class="section-label">
+                ORDER TYPE
+            </span>
+            <h2>
+                Bagaimana Anda ingin menikmati pesanan?
+            </h2>
+            <div class="order-type-grid">
+
+                <!-- DINE IN -->
+                <label class="order-type-card">
+                    <input
+                        type="radio"
+                        name="orderType"
+                        value="Dine In"
+                        checked>
+                    <div class="order-type-content">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>
+                            Dine In
+                        </h3>
+                        <p>
+                            Nikmati hidangan langsung
+                            di restoran kami.
+                        </p>
+                    </div>
+                </label>
+
+                <!-- TAKE AWAY -->
+                <label class="order-type-card">
+                    <input
+                        type="radio"
+                        name="orderType"
+                        value="Take Away">
+                    <div class="order-type-content">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h3>
+                            Take Away
+                        </h3>
+                        <p>
+                            Pesanan disiapkan untuk
+                            dibawa pulang.
+                        </p>
+                    </div>
+                </label>
+
+                <!-- DELIVERY -->
+                <label class="order-type-card">
+                    <input
+                        type="radio"
+                        name="orderType"
+                        value="Delivery">
+                    <div class="order-type-content">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <h3>
+                            Delivery
+                        </h3>
+                        <p>
+                            Pesanan diantar langsung
+                            ke lokasi Anda.
+                        </p>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+        <section class="order-menu-section">
+            <span class="section-label">
+                OUR MENU
+            </span>
+            <h2>
+                Pilih Hidangan
+            </h2>
+
+            <!-- ================================
+                 MAKANAN
+            ================================= -->
+            <div class="order-category">
+                <h3 class="order-category-title">
+                    <i class="fa-solid fa-utensils"></i>
+                    Makanan
+                </h3>
+                <div class="order-menu-grid">
+
+                    <!-- NASI GORENG -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/nasi-goreng.jpg"
+                            alt="Nasi Goreng Spesial">
+                        <div class="order-menu-info">
+                            <h3>
+                                Nasi Goreng Spesial
+                            </h3>
+                            <p>
+                                Nasi goreng khas dengan
+                                rempah pilihan.
+                            </p>
+                            <div class="order-price">
+                                Rp 35.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Nasi Goreng Spesial"
+                                    data-price="35000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SATE -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/sate-ayam.jpg"
+                            alt="Sate Ayam Madura">
+                        <div class="order-menu-info">
+                            <h3>
+                                Sate Ayam Madura
+                            </h3>
+                            <p>
+                                Sate ayam dengan
+                                bumbu kacang khas.
+                            </p>
+                            <div class="order-price">
+                                Rp 32.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Sate Ayam Madura"
+                                    data-price="32000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOTO -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/soto-ayam.jpg"
+                            alt="Soto Ayam">
+                        <div class="order-menu-info">
+                            <h3>
+                                Soto Ayam
+                            </h3>
+                            <p>
+                                Soto ayam dengan
+                                kuah rempah pilihan.
+                            </p>
+                            <div class="order-price">
+                                Rp 30.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Soto Ayam"
+                                    data-price="30000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BAKSO -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/bakso-kuah.jfif"
+                            alt="bakso-kuah">
+
+                        <div class="order-menu-info">
+                            <h3>
+                                Bakso Kuah
+                            </h3>
+                            <p>
+                                telur ikan sturgeon dengan butiran besar yang 
+                                lembut dan meleleh di mulut
+                            </p>
+                            <div class="order-price">
+                                Rp 15.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Bakso Spesial"
+                                    data-price="15.000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ================================
+                 MINUMAN
+            ================================= -->
+            <div class="order-category">
+                <h3 class="order-category-title">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Minuman
+                </h3>
+
+                <div class="order-menu-grid">
+
+                    <!-- ES TEH -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/es-teh.jpg"
+                            alt="Es Teh Manis">
+                        <div class="order-menu-info">
+                            <h3>
+                                Es Teh Manis
+                            </h3>
+                            <p>
+                                Teh manis dingin
+                                yang menyegarkan.
+                            </p>
+                            <div class="order-price">
+                                Rp 10.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Es Teh Manis"
+                                    data-price="10000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ES JERUK -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/es-jeruk.jpg"
+                            alt="Es Jeruk">
+                        <div class="order-menu-info">
+                            <h3>
+                                Es Jeruk
+                            </h3>
+                            <p>
+                                Minuman jeruk segar
+                                dengan rasa manis asam.
+                            </p>
+                            <div class="order-price">
+                                Rp 12.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Es Jeruk"
+                                    data-price="12000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JUS ALPUKAT -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/jus-alpukat.jpg"
+                            alt="Jus Alpukat">
+                        <div class="order-menu-info">
+                            <h3>
+                                Jus Alpukat
+                            </h3>
+                            <p>
+                                Jus alpukat creamy
+                                dengan rasa lembut.
+                            </p>
+                            <div class="order-price">
+                                Rp 18.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Jus Alpukat"
+                                    data-price="18000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KOPI SUSU -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/kopi-susu.jpg"
+                            alt="Kopi Susu">
+                        <div class="order-menu-info">
+                            <h3>
+                                Kopi Susu
+                            </h3>
+                            <p>
+                                Kopi dan susu dengan
+                                rasa yang seimbang.
+                            </p>
+                            <div class="order-price">
+                                Rp 20.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Kopi Susu"
+                                    data-price="20000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================================
+                 DESSERT
+            ================================= -->
+            <div class="order-category">
+                <h3 class="order-category-title">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    Dessert
+                </h3>
+                <div class="order-menu-grid">
+
+                    <!-- ES KRIM -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/es-krim.jpg"
+                            alt="Es Krim">
+                        <div class="order-menu-info">
+                            <h3>
+                                Es Krim
+                            </h3>
+                            <p>
+                                Es krim lembut dengan
+                                pilihan rasa.
+                            </p>
+                            <div class="order-price">
+                                Rp 15.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Es Krim"
+                                    data-price="15000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PUDING -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/puding-cokelat.jpg"
+                            alt="Puding Cokelat">
+                        <div class="order-menu-info">
+                            <h3>
+                                Puding Cokelat
+                            </h3>
+                            <p>
+                                Puding cokelat lembut
+                                dengan rasa manis.
+                            </p>
+                            <div class="order-price">
+                                Rp 17.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Puding Cokelat"
+                                    data-price="17000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SALAD BUAH -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/salad-buah.jpg"
+                            alt="Salad Buah">
+                        <div class="order-menu-info">
+                            <h3>
+                                Salad Buah
+                            </h3>
+                            <p>
+                                Buah segar dengan
+                                saus creamy.
+                            </p>
+                            <div class="order-price">
+                                Rp 20.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Salad Buah"
+                                    data-price="20000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAKE -->
+                    <div class="order-menu-card">
+                        <img
+                            src="images/cake.jpg"
+                            alt="Chrysos Signature Cake">
+                        <div class="order-menu-info">
+                            <h3>
+                                Chrysos Signature Cake
+                            </h3>
+                            <p>
+                                Cake spesial dengan
+                                sentuhan khas Chrysos Maze.
+                            </p>
+                            <div class="order-price">
+                                Rp 28.000
+                            </div>
+                            <div class="quantity">
+                                <label>
+                                    Jumlah
+                                </label>
+                                <input
+                                    type="number"
+                                    min="0"
+                                    value="0"
+                                    data-name="Chrysos Signature Cake"
+                                    data-price="28000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             CUSTOMER INFORMATION
+        ================================================== -->
+
+        <section class="customer-section">
+
+            <div class="customer-form">
+
+                <span class="section-label">
+                    CUSTOMER INFORMATION
+                </span>
+
+                <h2>
+                    Data Pemesan
+                </h2>
+
+                <label>
+                    Nama Lengkap
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Masukkan nama Anda">
+
+                <label>
+                    Nomor WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Contoh: 081234567890">
+
+                <label>
+                    Alamat
+                </label>
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Masukkan alamat atau nomor meja..."></textarea>
+
+                <label>
+                    Catatan Pesanan
+                </label>
+
+                <textarea
+                    id="customerNote"
+                    placeholder="Contoh: Tidak pedas, tanpa bawang..."></textarea>
+
+                <label>
+                    Metode Pembayaran
+                </label>
+                <select id="paymentMethod">
+                    <option value="Cash">
+                        Cash</option>
+                    <option value="QRIS">
+                        QRIS</option>
+                    <option value="Transfer Bank">
+                        Transfer Bank</option>
+                </select>
+            </div>
+
+            <!-- =================================================
+                 ORDER SUMMARY
+            ================================================== -->
+            <div class="order-summary">
+                <span class="section-label">
+                    YOUR ORDER
+                </span>
+                <h2>
+                    Ringkasan Pesanan
+                </h2>
+
+                <div id="orderSummaryList">
+                    <p class="empty-order">
+                        Belum ada menu yang dipilih.
+                    </p>
+                </div>
+
+                <div class="summary-line">
+                    <span>
+                        Total
+                    </span>
+                    <strong id="orderTotal">
+                        Rp 0
+                    </strong>
+                </div>
+
+                <button
+                    class="order-submit"
+                    onclick="sendOrder()">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                 Pesan Sekarang
+                </button>
+                <p class="order-note">
+                    Pesanan akan dikirim melalui WhatsApp.
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- =================================================
+         MUSIC
+    ================================================== -->
+    <audio
+        id="backgroundMusic"
+        loop>
+        <source
+            src="music/background.mp3"
+            type="audio/mpeg">
+
+    </audio>
+    <script src="music.js"></script>
+
+    <!-- =================================================
+         ORDER SCRIPT
+    ================================================== -->
+
+    <script>
+        const quantityInputs =
+            document.querySelectorAll(
+                '.quantity input'
+            );
+
+        quantityInputs.forEach(input => {
+            input.addEventListener(
+                'input',
+                updateOrder
+            );
+        });
+
+        function updateOrder() {
+            const summary =
+                document.getElementById(
+                    'orderSummaryList'
+                );
+            const totalElement =
+                document.getElementById(
+                    'orderTotal'
+                );
+
+            summary.innerHTML = '';
+            let total = 0;
+            let hasOrder = false;
+
+            quantityInputs.forEach(input => {
+                const quantity =
+                    parseInt(input.value) || 0;
+                const name =
+                    input.dataset.name;
+                const price =
+                    parseInt(input.dataset.price);
+
+                if (quantity > 0) {
+                    hasOrder = true;
+                    const subtotal =
+                        quantity * price;
+                    total += subtotal;
+                    const item =
+                        document.createElement('div');
+                    item.className =
+                        'summary-item';
+                    item.innerHTML = `
+                        <span>
+                            ${name}
+                            × ${quantity}
+                        </span>
+                        <strong>
+                            Rp ${subtotal.toLocaleString('id-ID')}
+                        </strong>
+                    `;
+                    summary.appendChild(item);
+                }
+            });
+
+
+            if (!hasOrder) {
+                summary.innerHTML = `
+                    <p class="empty-order">
+                        Belum ada menu yang dipilih.
+                    </p>
+                `;
+            }
+            totalElement.innerText =
+                'Rp ' +
+                total.toLocaleString('id-ID');
+        }
+
+        function sendOrder() {
+            let orderText =
+                'Halo The Chrysos Maze Grand Restaurant!%0A%0A';
+            let total = 0;
+            let hasOrder = false;
+            const orderType =
+                document.querySelector(
+                    'input[name="orderType"]:checked'
+                ).value;
+            orderText +=
+                '*Jenis Order:* ' +
+                orderType +
+                '%0A%0A';
+
+
+            quantityInputs.forEach(input => {
+                const quantity =
+                    parseInt(input.value) || 0;
+                if (quantity > 0) {
+                    hasOrder = true;
+                    const name =
+                        input.dataset.name;
+                    const price =
+                        parseInt(input.dataset.price);
+                    const subtotal =
+                        quantity * price;
+                    total += subtotal;
+                    orderText +=
+                        '- ' +
+                        name +
+                        ' x' +
+                        quantity +
+                        ' = Rp ' +
+                        subtotal.toLocaleString('id-ID') +
+                        '%0A';
+                }
+            });
+
+
+            if (!hasOrder) {
+                alert(
+                    'Silakan pilih minimal satu menu terlebih dahulu.'
+                );
+                return;
+            }
+
+            const customerName =
+                document.getElementById(
+                    'customerName'
+                ).value;
+            const customerPhone =
+                document.getElementById(
+                    'customerPhone'
+                ).value;
+            const customerAddress =
+                document.getElementById(
+                    'customerAddress'
+                ).value;
+            const customerNote =
+                document.getElementById(
+                    'customerNote'
+                ).value;
+            const payment =
+                document.getElementById(
+                    'paymentMethod'
+                ).value;
+            if (!customerName ||
+                !customerPhone) {
+                alert(
+                    'Silakan isi nama dan nomor WhatsApp terlebih dahulu.'
+                );
+                return;
+            }
+
+
+            orderText +=
+                '%0A*Total:* Rp ' +
+                total.toLocaleString('id-ID');
+            orderText +=
+                '%0A%0A*Data Pemesan*';
+            orderText +=
+                '%0ANama: ' +
+                encodeURIComponent(customerName);
+            orderText +=
+                '%0ANo. WhatsApp: ' +
+                encodeURIComponent(customerPhone);
+            orderText +=
+                '%0AAlamat/Meja: ' +
+                encodeURIComponent(customerAddress);
+            orderText +=
+                '%0APembayaran: ' +
+                encodeURIComponent(payment);
+            if (customerNote) {
+                orderText +=
+                    '%0ACatatan: ' +
+                    encodeURIComponent(customerNote);
+
+            }
+
+            /*
+                GANTI NOMOR INI DENGAN
+                NOMOR WHATSAPP RESTORAN
+            */
+            const restaurantNumber =
+                '6281234567890';
+            const whatsappURL =
+                'https://wa.me/' +
+                restaurantNumber +
+                '?text=' +
+                orderText;
+            window.open(
+                whatsappURL,
+                '_blank'
+            );
+        }
+    </script>
+
+    <script>
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicButton");
+    musicButton.addEventListener("click", function () {
+        if (music.paused) {
+            music.play();
+            musicButton.textContent = "🔊";
+        } else {
+            music.pause();
+            musicButton.textContent = "🔇";
+        }
+
+    });
+</script>
+<script src="music.js"></script>
+</body>
+</html>

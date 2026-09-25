@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Chrysos Maze Grand Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="Images/background.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+<nav class="navbar">
+    <!-- Tombol Musik -->
+    <button id="musicButton" class="music-button">
+        🔇
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<audio id="backgroundMusic" loop>
+    <source src="music/Malam.mpeg" type="audio/mpeg">
+</audio>
+
+
+    <!-- =========================
+         SOCIAL MEDIA
+    ========================== -->
+
+    <div class="social-sidebar">
+
+        <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="#" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="#" class="discord">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a href="#" class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         CONTACT CONTENT
+    ========================== -->
+
+    <main class="contact-page">
+
+        <!-- Header -->
+
+        <section class="contact-header">
+
+            <span class="gold-line"></span>
+
+            <p class="small-title">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                Kami dengan senang hati menerima pertanyaan,
+                reservasi, maupun pesan dari Anda.
+            </p>
+
+            <span class="gold-line"></span>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT INFORMATION
+        ========================== -->
+
+        <section class="contact-info-grid">
+
+
+            <!-- Address -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3>
+                    Our Location
+                </h3>
+
+                <p>
+                    Jl. Chrysos No. 88<br>
+                    Jakarta, Indonesia
+                </p>
+
+                <a href="#location">
+                    Lihat Lokasi
+                </a>
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    +62 812-3456-7890
+                </p>
+
+                <a href="tel:+6281234567890">
+                    Hubungi Kami
+                </a>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    info@chrysosmaze.com
+                </p>
+
+                <a href="mailto:info@chrysosmaze.com">
+                    Kirim Email
+                </a>
+
+            </div>
+
+
+            <!-- Opening Hours -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <h3>
+                    Opening Hours
+                </h3>
+
+                <p>
+                    Senin - Kamis<br>
+                    10.00 - 22.00
+                </p>
+
+                <p>
+                    Jumat - Minggu<br>
+                    10.00 - 23.00
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT FORM + MAP
+        ========================== -->
+
+        <section class="contact-main">
+
+
+            <!-- Form -->
+
+            <div class="contact-form-container">
+
+                <span class="section-label">
+                    SEND US A MESSAGE
+                </span>
+
+                <h2>
+                    How Can We Help?
+                </h2>
+
+                <p>
+                    Punya pertanyaan atau ingin memberikan masukan?
+                    Silakan kirimkan pesan kepada kami.
+                </p>
+
+
+                <form class="contact-form">
+
+                    <label for="name">
+                        Nama
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Masukkan nama Anda"
+                        required
+                    >
+
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email Anda"
+                        required
+                    >
+
+
+                    <label for="subject">
+                        Subjek
+                    </label>
+
+                    <select id="subject" name="subject">
+
+                        <option value="">
+                            -- Pilih Subjek --
+                        </option>
+
+                        <option value="reservation">
+                            Reservasi
+                        </option>
+
+                        <option value="question">
+                            Pertanyaan
+                        </option>
+
+                        <option value="feedback">
+                            Kritik & Saran
+                        </option>
+
+                        <option value="event">
+                            Event
+                        </option>
+
+                        <option value="other">
+                            Lainnya
+                        </option>
+
+                    </select>
+
+
+                    <label for="message">
+                        Pesan
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tuliskan pesan Anda..."
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Kirim Pesan
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Map / Location -->
+
+            <div class="location-container" id="location">
+
+                <span class="section-label">
+                    FIND US
+                </span>
+
+                <h2>
+                    Visit The Chrysos Maze
+                </h2>
+
+                <div class="map-placeholder">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>
+                        The Chrysos Maze
+                    </h3>
+
+                    <p>
+                        Jl. Chrysos No. 88<br>
+                        Jakarta, Indonesia
+                    </p>
+
+                    <a href="#">
+                        Buka di Google Maps →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESERVATION
+        ========================== -->
+
+        <section class="reservation-section">
+
+            <div class="reservation-content">
+
+                <span class="section-label">
+                    RESERVATION
+                </span>
+
+                <h2>
+                    Make Your Visit Special
+                </h2>
+
+                <p>
+                    Ingin menikmati pengalaman bersantap bersama
+                    keluarga, teman, atau orang terkasih?
+                    Lakukan reservasi terlebih dahulu untuk mendapatkan
+                    pengalaman yang lebih nyaman.
+                </p>
+
+                <a href="order.html" class="gold-button">
+                    Make a Reservation
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicButton");
+
+    musicButton.addEventListener("click", function () {
+
+        if (music.paused) {
+            music.play();
+            musicButton.textContent = "🔊";
+        } else {
+            music.pause();
+            musicButton.textContent = "🔇";
+        }
+
+    });
+</script>
+<script src="music.js"></script>
+</body>
+</html>

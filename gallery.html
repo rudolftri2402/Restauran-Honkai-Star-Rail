@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Chrysos Maze Grand Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="Images/background.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+<nav class="navbar">
+    <!-- Tombol Musik -->
+    <button id="musicButton" class="music-button">
+        🔇
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<audio id="backgroundMusic" loop>
+    <source src="music/Malam.mpeg" type="audio/mpeg">
+</audio>
+
+    <!-- =========================
+         SOCIAL MEDIA
+    ========================== -->
+    <div class="social-sidebar">
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-tiktok"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-discord"></i></a>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+    <main class="gallery-page">
+
+        <!-- Header -->
+        <section class="gallery-header">
+            <span class="gold-line"></span>
+            <p class="small-title">
+                OUR COLLECTION</p>
+            <h1>
+                Gallery
+            </h1>
+            <p>
+                Jelajahi berbagai hidangan yang kami hadirkan
+                di The Chrysos Maze Grand Restaurant.
+            </p>
+            <span class="gold-line"></span>
+        </section>
+
+        <!-- =========================
+             MAKANAN
+        ========================== -->
+        <section class="gallery-category">
+            <div class="category-title">
+                <span></span>
+                <h2>
+                    Makanan
+                </h2>
+                <span></span>
+            </div>
+            <div class="gallery-grid">
+
+                <!-- 1 -->
+                <div class="gallery-card">
+                    <img src="images/nasi-goreng.jpg"
+                         alt="Nasi Goreng Spesial">
+                    <div class="gallery-info">
+                        <h3>Nasi Goreng Spesial</h3>
+                        <p>Nasi goreng khas dengan cita rasa gurih dan rempah pilihan.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="gallery-card">
+                    <img src="images/sate-ayam.jpg"
+                         alt="Sate Ayam Madura">
+                    <div class="gallery-info">
+                        <h3>Sate Ayam Madura</h3>
+                        <p>Sate ayam dengan bumbu kacang khas yang kaya rasa.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="gallery-card">
+                    <img src="images/soto-ayam.jpg"
+                         alt="Soto Ayam">
+                    <div class="gallery-info">
+                        <h3>Soto Ayam</h3>
+                        <p>Kuah hangat dengan ayam, rempah, dan pelengkap pilihan.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="gallery-card">
+                    <img src="images/bakso-kuah.jfif"
+                         alt="Bakso Spesial">
+                    <div class="gallery-info">
+                        <h3>Bakso Spesial</h3>
+                        <p>Bakso lembut dengan kuah gurih yang cocok dinikmati kapan saja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             MINUMAN
+        ========================== -->
+        <section class="gallery-category">
+            <div class="category-title">
+                <span></span>
+                <h2>
+                    Minuman
+                </h2>
+                <span></span>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- 1 -->
+                <div class="gallery-card">
+                    <img src="images/es-teh.jpg"
+                         alt="Es Teh Manis">
+                    <div class="gallery-info">
+                        <h3>Es Teh Manis</h3>
+                        <p>Minuman teh klasik yang menyegarkan.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="gallery-card">
+                    <img src="images/es-jeruk.jpg"
+                         alt="Es Jeruk">
+                    <div class="gallery-info">
+                        <h3>Es Jeruk</h3>
+                        <p>Kesegaran jeruk dengan rasa manis dan sedikit asam.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="gallery-card">
+                    <img src="images/jus-alpukat.jpg"
+                         alt="Jus Alpukat">
+                    <div class="gallery-info">
+                        <h3>Jus Alpukat</h3>
+                        <p>Jus alpukat creamy dengan rasa yang lembut.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="gallery-card">
+                    <img src="images/kopi-susu.jpg"
+                         alt="Kopi Susu">
+                    <div class="gallery-info">
+                        <h3>Kopi Susu</h3>
+                        <p>Perpaduan kopi dan susu dengan rasa yang seimbang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             DESSERT
+        ========================== -->
+
+        <section class="gallery-category">
+            <div class="category-title">
+                <span></span>
+                <h2>
+                    Dessert
+                </h2>
+                <span></span>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- 1 -->
+                <div class="gallery-card">
+                    <img src="images/es-krim.jpg"
+                         alt="Es Krim">
+                    <div class="gallery-info">
+                        <h3>Es Krim</h3>
+                        <p>Es krim lembut dengan berbagai pilihan rasa.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="gallery-card">
+                    <img src="images/puding-cokelat.jpg"
+                         alt="Puding Cokelat">
+                    <div class="gallery-info">
+                        <h3>Puding Cokelat</h3>
+                        <p>Puding cokelat lembut dengan rasa manis yang pas.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="gallery-card">
+                    <img src="images/salad-buah.jpg"
+                         alt="Salad Buah">
+                    <div class="gallery-info">
+                        <h3>Salad Buah</h3>
+                        <p>Potongan buah segar dengan saus creamy.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="gallery-card">
+                    <img src="images/cake.jpg"
+                         alt="Chrysos Signature Cake">
+                    <div class="gallery-info">
+                        <h3>Chrysos Signature Cake</h3>
+                        <p>Hidangan penutup spesial dengan sentuhan khas Chrysos Maze.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicButton");
+    musicButton.addEventListener("click", function () {
+
+        if (music.paused) {
+            music.play();
+            musicButton.textContent = "🔊";
+        } else {
+            music.pause();
+            musicButton.textContent = "🔇";
+        }
+
+    });
+</script>
+<script src="music.js"></script>
+</body>
+</html>
