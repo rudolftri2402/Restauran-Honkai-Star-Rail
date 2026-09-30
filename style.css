@@ -2259,3 +2259,42 @@ HOME
     }
 
 }
+
+.promotion-section {
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.promotion-section h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.promotion-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.promotion-table th,
+.promotion-table td {
+    border: 1px solid #d4af37;
+    padding: 25px;
+    text-align: center;
+}
+
+.promotion-table th {
+    color: #d4af37;
+    font-size: 25px;
+}
+
+.promotion-table td h3 {
+    color: #d4af37;
+}
+
+.promotion-table td {
+    color: white;
+    line-height: 1.6;
+}
