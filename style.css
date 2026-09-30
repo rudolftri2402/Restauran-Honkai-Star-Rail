@@ -32,8 +32,6 @@ body::before {
     z-index: -1;
 }
 
-
-
         h2 {
             color: #ffffff;
         }
@@ -2199,65 +2197,45 @@ HOME
 /* =====================================================
    RESPONSIVE
 ===================================================== */
-
 @media (max-width: 1000px) {
-
     .order-menu-grid {
-
         grid-template-columns:
             repeat(2, 1fr);
     }
 
-
     .customer-section {
-
         grid-template-columns:
             1fr;
     }
-
 
     .order-summary {
-
         position: static;
     }
-
 }
 
-
 @media (max-width: 700px) {
-
     .order-type-grid {
-
         grid-template-columns:
             1fr;
     }
-
 
     .order-menu-grid {
-
         grid-template-columns:
             1fr;
     }
 
-
     .order-page {
-
         width: 88%;
     }
 
-
     .order-header h1 {
-
         font-size: 38px;
     }
 
-
     .customer-form,
     .order-summary {
-
         padding: 25px;
     }
-
 }
 
 .promotion-section {
